@@ -1,0 +1,23 @@
+body {
+    background: #00b7ff;
+}
+
+#container {
+    border: 1px solid red;
+    background: #ffffff;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    width: 200px;
+}
+
+#position {
+    background: #ffffff;
+    border: 1px solid red;
+    margin: 0;
+}

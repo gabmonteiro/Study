@@ -1,0 +1,125 @@
+/*limpando formatações*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*configurando body e fontes*/
+body {
+  font-size: 1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: rgb(241, 241, 241);
+}
+
+/*formatação cabeçalho*/
+#div-cabecalho {
+  background: #f8cb00;
+  text-align: center;
+  padding: 15px;
+}
+
+#div-cabecalho h1 {
+  padding: 15px;
+  color: #53524e;
+  font-weight: bolder;
+  font-size: 3.3em;
+}
+
+.branco {
+  color: white;
+}
+
+#div-menu {
+  padding: 15px;
+}
+
+#div-menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+#div-menu a:hover {
+  background: white;
+  color: #54524e;
+  border-radius: 10px;
+}
+
+/*formatando conteudos em geral*/
+#div-conteudos {
+  display: grid;
+  place-content: center;
+  grid-template-columns: min-content 300px;
+  grid-template-areas:
+  "feed lateral"
+  "rodape rodape"
+  ;
+}
+
+/*formatação conteúdo left*/
+#div-feed {
+  grid-area: feed;
+}
+
+#div-feed h1 {
+  color: #f8cb00;
+}
+
+#div-feed img {
+  margin: 15px 0;
+}
+
+#div-feed p {
+  text-align: justify;
+}
+
+.postagem {
+  background: white;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+}
+
+/*formatação conteúdo right*/
+#div-postagens,
+#div-categorias {
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  text-align: justify;
+  margin: 15px;
+  padding: 15px;
+  grid-area: lateral;
+}
+
+#div-postagens h1,
+#div-categorias h1 {
+  font-size: 1.5em;
+  background: #d8d8d8;
+  color: #6d6d6d;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#div-postagens a,
+#div-categorias a {
+  text-decoration: none;
+  color: #f8cb00;
+}
+
+#div-categorias a {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+/*formatação rodapé*/
+#div-rodape {
+  background: rgb(218, 218, 218);
+  padding: 10px;
+  text-align: center;
+  grid-area: rodape;
+}
