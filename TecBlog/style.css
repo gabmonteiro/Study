@@ -21,9 +21,9 @@ body {
 
 #div-cabecalho h1 {
   padding: 15px;
-  color: #53524e;
   font-weight: bolder;
   font-size: 3.3em;
+  color: #4e4e4e;
 }
 
 .branco {
@@ -36,10 +36,10 @@ body {
 
 #div-menu a {
   padding: 15px;
-  text-decoration: none;
-  color: white;
   font-weight: bolder;
   font-size: 1.2em;
+  text-decoration: none;
+  color: white;
 }
 
 #div-menu a:hover {
@@ -48,11 +48,11 @@ body {
   border-radius: 10px;
 }
 
-/*formatando conteudos em geral*/
+/*formatando grid conteudos*/
 #div-conteudos {
   display: grid;
   place-content: center;
-  grid-template-columns: min-content 300px;
+  grid-template-columns: min-content 20%;
   grid-template-areas:
   "feed lateral"
   "rodape rodape"
@@ -84,10 +84,9 @@ body {
 }
 
 /*formatação conteúdo right*/
-#div-postagens,
+#div-postagens-recentes,
 #div-categorias {
   background: white;
-  width: 300px;
   border-radius: 10px;
   text-align: justify;
   margin: 15px;
@@ -95,16 +94,16 @@ body {
   grid-area: lateral;
 }
 
-#div-postagens h1,
+#div-postagens-recentes h1,
 #div-categorias h1 {
   font-size: 1.5em;
   background: #d8d8d8;
-  color: #6d6d6d;
+  color: #4e4e4e;
   border-radius: 10px;
   padding: 5px;
 }
 
-#div-postagens a,
+#div-postagens-recentes a,
 #div-categorias a {
   text-decoration: none;
   color: #f8cb00;
@@ -118,8 +117,10 @@ body {
 
 /*formatação rodapé*/
 #div-rodape {
-  background: rgb(218, 218, 218);
   padding: 10px;
   text-align: center;
   grid-area: rodape;
+  margin: 0 15px;
+  background: rgb(218, 218, 218);
+  border-radius: 10px 10px 0 0;
 }
