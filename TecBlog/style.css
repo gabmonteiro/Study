@@ -15,10 +15,13 @@ body {
 /*formatação cabeçalho*/
 #div-cabecalho {
   background: #f8cb00;
-  text-align: center;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
 
+/*formatando título*/
 #div-cabecalho h1 {
   padding: 15px;
   font-weight: bolder;
@@ -30,8 +33,9 @@ body {
   color: white;
 }
 
+/*formatando menu*/
 #div-menu {
-  padding: 15px;
+  text-align: center;
 }
 
 #div-menu a {
@@ -52,7 +56,7 @@ body {
 #div-conteudos {
   display: grid;
   place-content: center;
-  grid-template-columns: min-content 20%;
+  grid-template-columns: min-content 20vw;
   grid-template-areas:
   "feed lateral"
   "rodape rodape"
@@ -62,6 +66,15 @@ body {
 /*formatação conteúdo left*/
 #div-feed {
   grid-area: feed;
+}
+
+.postagem {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
 }
 
 #div-feed h1 {
@@ -74,13 +87,6 @@ body {
 
 #div-feed p {
   text-align: justify;
-}
-
-.postagem {
-  background: white;
-  border-radius: 10px;
-  margin: 15px;
-  padding: 15px;
 }
 
 /*formatação conteúdo right*/
