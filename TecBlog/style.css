@@ -6,7 +6,7 @@
 
 /*configurando body e fontes*/
 body {
-  font-size: 1em;
+  font-size: calc(0.75em + 1vw);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background: rgb(241, 241, 241);
@@ -102,7 +102,7 @@ body {
 
 #div-postagens-recentes h1,
 #div-categorias h1 {
-  font-size: 1.5em;
+  font-size: 1em;
   background: #d8d8d8;
   color: #4e4e4e;
   border-radius: 10px;
@@ -118,11 +118,11 @@ body {
 #div-categorias a {
   display: block;
   font-weight: 600;
-  font-size: 1.2em;
 }
 
 /*formatação rodapé*/
 #div-rodape {
+  font-size: calc(0.75em + 1vw);
   padding: 10px;
   text-align: center;
   grid-area: rodape;

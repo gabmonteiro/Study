@@ -1,23 +1,28 @@
+/*formatação do corpo*/
 body {
-    background: #00b7ff;
+  font-size: 1rem;
+  font-family: "Brush Script MT", "cursive";
 }
 
-#container {
-    border: 1px solid red;
-    background: #ffffff;
-    width: 800px;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
+/*formatação da ul*/
+#menu {
+  margin: 0 auto;
+  width: 10vw;
+  text-align: center;
 }
 
-p {
-    text-align: justify;
-    width: 200px;
+/*formatando links*/
+li {
+  padding: 10px 20px;
+
+  list-style-type: none;
+  font-size: 2em;
+
+  color: black;
+  background: rgb(0, 255, 42);
 }
 
-#position {
-    background: #ffffff;
-    border: 1px solid red;
-    margin: 0;
+li:hover {
+  background: rgb(0, 240, 40);
+  color: white;
 }
