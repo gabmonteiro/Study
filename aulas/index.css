@@ -2,27 +2,32 @@
 body {
   font-size: 1rem;
   font-family: "Brush Script MT", "cursive";
+  text-align: center;
 }
 
-/*formatação da ul*/
+/*formatação da div*/
 #menu {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 10vw;
   text-align: center;
 }
 
 /*formatando links*/
-li {
-  padding: 10px 20px;
-
-  list-style-type: none;
-  font-size: 2em;
-
+a {
+  padding: 10px;
+  font-size: 3em;
+  text-decoration: none;
   color: black;
-  background: rgb(0, 255, 42);
+  background: greenyellow;
 }
 
-li:hover {
-  background: rgb(0, 240, 40);
-  color: white;
+a:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(159, 236, 43);
+}
+
+.selecionado {
+  background: rgb(159, 236, 43);
 }
