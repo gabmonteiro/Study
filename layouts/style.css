@@ -1,0 +1,82 @@
+/*limpando margin e padding da página*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*definindo fonte e caracteristicas do body*/
+body {
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    background-color: #f0f6f6;
+}
+
+/*definindo grid na div-grid*/
+#div-grid {
+    display: grid;
+    width: 70vw;
+    margin: 0 auto;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr minmax(15vw, min-content) 1fr;
+    grid-template-areas:
+    "header header"
+    "menu conteudo"
+    "footer footer";
+}
+
+/*formatação div cabeçalho*/
+#div-cabecalho {
+    grid-area: header;
+    background: #bbe6e4;
+
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+#div-cabecalho h1 {
+    padding: 10px;
+    font-size: 5em;
+    font-family: Blippo, fantasy;
+    color: #42bfdd;
+}
+
+.destaque {
+    color: #084b83;
+}
+
+/*formatação div menu-lateral*/
+#menu-lateral {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-lateral a {
+    padding: 30px;
+    font-size: 2em;
+    font-family: Blippo, fantasy;
+    text-decoration: none;
+    color: #42bfdd;
+    background: #BBE6E4;
+}
+
+#menu-lateral a:hover {
+    color: #084b83;
+    background-color: #42bfdd;
+}
+
+/*formatação div conteúdo*/
+#div-conteudo {
+    text-align: justify;
+    grid-area: conteudo;
+}
+
+/*formatação div footer*/
+#footer {
+    text-align: center;
+    grid-area: footer;
+}
