@@ -1,3 +1,13 @@
+/*zerando padding e margin geral e definindo cores*/
+* {
+  padding: 0;
+  margin: 0;
+  --cor-de-fundo: rgb(0, 169, 221);
+  --cor-de-fundo-selecionado: rgb(0, 185, 241);
+  --cor-de-divisor: rgb(0, 151, 197);
+  --cor-de-borda-inferior: rgb(0, 195, 255);
+}
+
 /*formatação do corpo*/
 body {
   font-size: 1rem;
@@ -5,29 +15,41 @@ body {
   text-align: center;
 }
 
-/*formatação da div*/
+/*formatação da div flex*/
 #menu {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 10vw;
-  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--cor-de-fundo);
 }
 
-/*formatando links*/
+/*formatando botões*/
 a {
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 3em;
   text-decoration: none;
-  color: black;
-  background: greenyellow;
+  color: white;
+  background: var(--cor-de-fundo);
+  border-left: 1px solid var(--cor-de-divisor); border-right: 1px solid var(--cor-de-divisor);
 }
 
 a:hover {
-  color: rgb(255, 255, 255);
-  background: rgb(159, 236, 43);
+  background: var(--cor-de-fundo-selecionado);
+  border-bottom: 10px solid var(--cor-de-borda-inferior);
+  padding-bottom: 0px;
 }
 
 .selecionado {
-  background: rgb(159, 236, 43);
+  background: var(--cor-de-fundo-selecionado);
+  border-bottom: 10px solid var(--cor-de-borda-inferior);
+  padding-bottom: 0px;
+}
+
+/*formatando conteúdo*/
+p {
+  width: 50vw;
+  margin: 20px auto;
+  text-align: justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
