@@ -1,0 +1,23 @@
+:root {
+    --background-color-1: white;
+    --background-color-2: #CCCCCC;
+    --color-titulo: #515151;
+    --color-nav: #333333;
+    --color-nav-titles: white;
+    --color-images-border: #D6D6D6;
+    --subtitle-color: #666666;
+    --subtitle-background-color: #F0F0F0;
+    --title-1-font-size: 64px;
+    --title-2-font-size: 12.8px;
+    --nav-font-size: 18px;
+    --subtitle-font-size: 16px;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

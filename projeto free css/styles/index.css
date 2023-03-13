@@ -1,0 +1,106 @@
+/*definindo a corde fundo, alinhando container principal*/
+body {
+    background-image: linear-gradient(to bottom, var(--background-color-2) 0, var(--background-color-2) 50%, var(--background-color-1) 50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*formatando o container principal e alinhando elementos filhos*/
+#container-principal {
+    width: 66vw;
+}
+
+/*formatação do header*/
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+#titulo {
+    width: fit-content;
+}
+
+#titulo h1 {
+    color: var(--color-titulo);
+    font-size: var(--title-1-font-size);
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+#titulo h2 {
+    color: var(--color-titulo);
+    font-size: var(--title-2-font-size);
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+#header img {
+    max-width: 100%;
+}
+
+/*formatando div de navegação*/
+#nav {
+    background-color: var(--color-nav);
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px 8px 0 0;
+    border: 0 solid var(--color-nav);
+}
+
+#nav a {
+    padding: 10px;
+    color: var(--color-nav-titles);
+    font-size: var(--nav-font-size);
+    font-weight: 400;
+}
+
+#anuncio {
+    background-color: var(--background-color-1);
+    text-align: center;
+    padding: 20px 15px;
+}
+
+#anuncio img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h3 {
+    background-color: var(--subtitle-background-color);
+}
+
+span {
+    display: inline-block;
+    background-color: var(--background-color-1);
+    padding: 5px;
+    font-size: var(--subtitle-font-size);
+    color: var(--subtitle-color);
+    font-weight: 700;
+}
+
+/*formatando section de templater*/
+#section {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.template-container {
+    padding: 4px;
+    border: 1px solid #D6D6D6;
+}
+
+.template-container img {
+    max-width: 100%;
+}
+
